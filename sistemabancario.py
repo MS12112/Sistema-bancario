@@ -1,3 +1,4 @@
+#Menu
 menu = """
 
 =========MENU==========
@@ -17,7 +18,7 @@ LIMITE_SAQUES = 3
 while True:
     
     opcao = input(menu)
-    
+    # Depósito
     if opcao == "1":
         print("======Deposito======\n")
         deposito = float(input("Informe o valor desejado: "))
@@ -28,7 +29,7 @@ while True:
         else:
             print("Operação falhou! Valor inválido")
         
-        
+    #Saque    
     elif opcao == "2":
         print("======Saque======\n")
         saque = float(input("Informe o valor desejado: "))
@@ -53,12 +54,12 @@ while True:
         else: 
             print("Operação Falhou! Valor Inválido.")
             
-        
+    #Extrato    
     elif opcao == "3":
         print("======Extrato======")
         print(f"Saldo: {saldo:.2f}")
         
-    
+    #Saída
     elif opcao == "0":
         break
     
